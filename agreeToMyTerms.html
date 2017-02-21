@@ -1,0 +1,31 @@
+<html>
+<head>
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<p> Alright, here is how its gonna go, we don't go any further until you agree to my terms and condtions ok?
+		good...
+		Now check that box
+	</p>
+	<input type="checkbox" name="agree" id="check" > Check me
+	<br>
+	<br>
+	<div>
+	</div>
+	<script>
+		$("#check").change(function(){
+			if($(this).prop("checked") == true){
+
+				$("div").css("color", "blue");
+				$("div").css("font", "25px");
+				$("div").html("Aight, we copacetic then :) ");
+			} else {
+				$("div").css("color", "red");
+				$("div").css("font", "30px");
+				$("div").html("You serious?!");
+			}
+
+		});
+	</script>
+</body>
+</html>
