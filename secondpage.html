@@ -9,7 +9,24 @@
 	$(document).ready(function() {
 		$("h1").click(function() {
 			$("h1").css("color","blue");
-		$("h1").html("cool right?!  :) ");
+			$("h1").html("cool right?!  :) ");
+			
+			setTimeout(
+				function() {
+					$("h1").css("color","red");
+					$("h1").html("Still here? we are done...get out...");
+					setTimeout(
+						function(){
+							$("h1").css("color","orange");
+							$("h1").html("Almost got you! Now we are really done...(or are we??? :O ) ");
+						},5000)		
+				},
+				5000);
+			
+			
+			function displaythis() {
+
+			};
 		})
 	});
 </script>
