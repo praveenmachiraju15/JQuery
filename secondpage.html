@@ -4,6 +4,9 @@
 </head>
 <body>
 	<p><h1> This is a normal paragraph...nothing to see here, move right along...but may be click on me??? </h1></p>
+	<div id="adiv">
+		Here, i am, just a div hangin around...come over here...
+	</div>
 </body>
 <script>
 	$(document).ready(function() {
@@ -22,12 +25,13 @@
 						},5000)		
 				},
 				5000);
-			
-			
-			function displaythis() {
-
-			};
 		})
+		$("div#adiv").mouseenter(function(){
+			$("div").css("color","pink");
+		});
+		$("div#adiv").mouseleave(function(){
+			$("div").css("color","black");
+		});
 	});
 </script>
 </html>
