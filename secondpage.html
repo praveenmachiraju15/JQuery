@@ -26,12 +26,16 @@
 				},
 				5000);
 		})
-		$("div#adiv").mouseenter(function(){
-			$("div").css("color","pink");
-		});
-		$("div#adiv").mouseleave(function(){
-			$("div").css("color","black");
-		});
+		
+	});
+
+	$("div#adiv").mouseenter(function(){
+		$("div").css("color","pink");
+		$("div").css("fontSize", "30px");
+	});
+	$("div#adiv").mouseleave(function(){
+		$("div").css("color","black");
+		$("div").css("fontSize", "20px");
 	});
 </script>
 </html>

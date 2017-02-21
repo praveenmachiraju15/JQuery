@@ -1,0 +1,20 @@
+<html>
+<head>
+	<script src = "scripts/jquery-3.1.1.min.js"> </script>
+</head>
+<body>
+	<form name="simple form" id="simpleform" action="#">
+	<lable>First Name</lable><br> <input type="text" name="fname" id="fname" required= "required">
+	<br>
+	<br>
+	<lable>Last Name</lable><br> <input type="text" name="lname" id="lname" required="required">
+	<br>
+	<input type="submit" id="submit" name="submit" value="Submit"/>
+	</form>
+	<script type="text/javascript">
+		$("#submit").click(function(){
+			alert($("#fname").val())
+		});
+	</script>
+</body>
+</html>
